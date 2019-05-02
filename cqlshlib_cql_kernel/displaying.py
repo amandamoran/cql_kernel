@@ -99,18 +99,22 @@ class FormattedValue:
         """
         return self.coloredval + self._pad(width, fill)
 
+
 DEFAULT_VALUE_COLORS = dict(
     default=YELLOW,
     text=YELLOW,
     error=RED,
     blob=DARK_MAGENTA,
     timestamp=GREEN,
+    date=GREEN,
+    time=GREEN,
     int=GREEN,
     float=GREEN,
     decimal=GREEN,
     inet=GREEN,
     boolean=GREEN,
     uuid=GREEN,
+    duration=GREEN,
     collection=BLUE,
     reset=ANSI_RESET,
 )
